@@ -12,5 +12,6 @@ http://localhost:8090/ServletTest-1/hello
 
 
 Run Dockerfile4app
+
 docker build -f Dockerfile4app .
 
