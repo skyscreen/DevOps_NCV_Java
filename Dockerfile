@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER pwittchen
+MAINTAINER refer by pwittchen for java 8, others by skyscreen
 USER root
 
 #install java8
