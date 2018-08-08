@@ -1,0 +1,6 @@
+FROM skyscreen/ncv:app1.0
+MAINTAINER skyscreen
+USER root
+
+#docker run -ti -p8090:800 [imageid] bash
+#http://localhost:8090/ServletTest-1/hello
