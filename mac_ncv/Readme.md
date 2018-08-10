@@ -1,4 +1,4 @@
-Deploy docker with nomad,consul,vault on Mac standlone
+Deploy docker with nomad,consul,vault on Mac standalone
 
 One node for lead and client, 3 clients just as examples to submit one of them
 
