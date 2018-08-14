@@ -8,7 +8,9 @@ setup: add nomad,consul,vault to /usr/local/bin PATH
 2. start nomad(0.8.4)  :nomad agent -config server.hcl
 3. start nomad agent   :
       nomad agent -config client1.hcl -network-interface=lo0
+      
       nomad agent -config client2.hcl -network-interface=lo0
+      
       nomad agent -config client3.hcl -network-interface=lo0
 4. submit job          :nomad run ncv.hcl
 5. verify by docker    :docker ps
