@@ -16,6 +16,7 @@ setup: add nomad,consul,vault to /usr/local/bin PATH
 5. verify by docker    :docker ps
 6. verify by http .    : http://localhost:8090/ServletTest-1/hello
 7. since v1.2 use consul-template, nomad use --add-host to stick to docker container
+8. query value by conslu key, get vault value from its token value. 
 
 
 
