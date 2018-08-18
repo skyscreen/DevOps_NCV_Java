@@ -7,6 +7,8 @@ Similar with mac_ncv, but different in
 2) use lo(127.0.0.1) as network interface 
 <br>
 3) since v1.2 use consul-template, nomad use host network model stick to docker container
+<br>
+4) query value by conslu key, get vault value from its token value.
 
 
 
