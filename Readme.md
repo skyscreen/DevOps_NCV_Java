@@ -1,12 +1,12 @@
 
 
-Deploy java project docker on nomad consul vault on standalone on Linux VM and Mac 
+# Deploy java project docker on nomad consul vault on standalone on Linux VM and Mac 
 
 
-v1.0/v1.1   
+## v1.0/v1.1   
 Deploy docker on nomad and consul
 
-#if only use java servlet maven project:  
+==if only use java servlet maven project:  
 mvn clean install  <br>
 
 #For docker run 
@@ -27,11 +27,12 @@ http://localhost:8090/ServletTest-1/hello
 <br>
 <br>
 <br>
-v1.2
+## v1.2
 <br>
 Deploy to vault and use consul-template to access vault and consul kv
 <br>
 Before deploy
+<br>
 <br>
 1) setup vault (init,unseal,create policy for new path,gen token, create kv for new path
 <br>
