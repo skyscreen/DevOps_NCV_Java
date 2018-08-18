@@ -29,16 +29,17 @@ job "ncv" {
       # multiple drivers.
       driver = "docker"
 	  artifact {
-		    source = "http://172.29.144.1:8000/ncv_app1.1.tar"
+		    source = "http://172.29.144.1:8000/ncv_app1.2.tar"
 	  }
 	  
       # Configuration is specific to each driver.
       config {
-        image = "skyscreen/ncv:app1.1"
+        image = "skyscreen/ncv:app1.2"
+        network_mode = "host"
 		#block dockerhub
 		#force_pull = false		
 		
-		load = "ncv_app1.1.tar"
+		load = "ncv_app1.2.tar"
 		
         command = "/tmp/servlet/start.sh"
 		#args = ["-v","/tmp:/mnt/c/tmp"]
@@ -73,6 +74,7 @@ job "ncv" {
       # It is possible to set environment variables which will be
       # available to the task when it runs.
       env {
+        "CONSUL_CONFIG"="config_ubuntu.hcl"
         #"DB_HOST" = "db01.example.com"
         #"DB_USER" = "web"
         #"DB_PASS" = "loremipsum"
@@ -91,7 +93,7 @@ job "ncv" {
           # be something like "46283", but we refer to it via the
           # label "http".
           port "http" {
-            static = 8090
+            static = 2080
             #netmask = "192.168.1.0/32"
           }
 

@@ -1,0 +1,6 @@
+consul-template -template "consul.tpl:vault.html" -once -config config.hcl
+value=`cat vault.html`
+export VAULT_TOKEN=$value
+consul-template -template "vault.tpl:vault.html" -once -config config.hcl
+mkdir -p /usr/local/tomcat/webapps/vault
+cp /tmp/vault.html /usr/local/tomcat/webapps/vault/

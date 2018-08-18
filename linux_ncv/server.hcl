@@ -19,3 +19,10 @@ server {
     bootstrap_expect = 1
 }
 
+
+vault {
+	enabled = true
+	address = "http://127.0.0.1:8200"
+	
+	token = "2cc25b79-b39e-e831-3e22-6b3d4d7ae7fe"
+}
