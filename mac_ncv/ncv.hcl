@@ -31,7 +31,10 @@ job "ncv" {
 
       # Configuration is specific to each driver.
       config {
-        image = "skyscreen/ncv:app1.1"
+        image = "skyscreen/ncv:app1.2"
+        args = [
+            "--add-host","localhost:192.168.65.1",
+        ]
         command = "/tmp/servlet/start.sh"
         #dns_servers = ["192.168.1.1", "8.8.8.8"]
 				port_map {
@@ -58,6 +61,7 @@ job "ncv" {
       # It is possible to set environment variables which will be
       # available to the task when it runs.
       env {
+        "CONSUL_CONFIG"="config.hcl"
         #"DB_HOST" = "db01.example.com"
         #"DB_USER" = "web"
         #"DB_PASS" = "loremipsum"

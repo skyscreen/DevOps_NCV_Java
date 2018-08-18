@@ -1,0 +1,1 @@
+{{ key "sky/vault" }}
