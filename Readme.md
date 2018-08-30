@@ -1,24 +1,17 @@
-This is for k8 deploy
+# This is for k8s deploy
 
-#Just run by maven
-mvn clean install
+## setup cluster in standalone 
+please refer https://github.crookster.org/Kubernetes-Ubuntu-18.04-Bare-Metal-Single-Host/
 
-
-#Run for docker
-#since image update, suggest use Dockerfile4app 
-
-docker build .
-
-docker run -ti -p 8090:8080 [image_id] bash
-
-/tmp/servlet/start.sh
-
-#http access in local
-
-http://localhost:8090/ServletTest-1/hello
+## run yml
+kubectl create -f k8app.yml
 
 
-#Run by Dockerfile4app
+## verify
+kubectl describe pod k8app    | grep IP:
+curl http://<IP>:8080
 
-docker build -f Dockerfile4app .
+
+
+
 
