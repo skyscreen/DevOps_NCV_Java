@@ -1,0 +1,12 @@
+---
+# deploy ncv for ubuntu
+
+- name: set env varibles
+  hosts: 127.0.0.1
+  remote_user: sky
+   
+  tasks:
+  - name: run script to start ncv
+    shell: |
+         cd /home/sky/ncv/deploy/
+         /home/sky/ncv/deploy/start_all.sh | tee > /tmp/ansible_ncv.log
