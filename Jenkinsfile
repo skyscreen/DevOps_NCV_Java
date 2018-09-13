@@ -5,7 +5,7 @@ pipeline {
     stage ("run ansible yml file"){
       steps{
         script{
-           sh "export ANSIBLE_HOST_KEY_CHECKING=false;ansible-playbook /tmp/deploy_job.yml -u sky -i /etc/ansible/hosts"
+           sh "cp /home/sky/ncv/deploy/deploy_job.yml /tmp/;export ANSIBLE_HOST_KEY_CHECKING=false;ansible-playbook /tmp/deploy_job.yml -u sky -i /etc/ansible/hosts"
         }//script
       }//steps
     
