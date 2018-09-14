@@ -1,0 +1,12 @@
+---
+# deploy k8 for ubuntu
+
+- name: set env varibles
+  hosts: 127.0.0.1
+  remote_user: sky
+   
+  tasks:
+  - name: run script to start k8
+    shell: |
+         cd /home/sky/k8/
+         /home/sky/k8/start_all.sh | tee > /tmp/ansible_ncv.log
