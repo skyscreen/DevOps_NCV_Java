@@ -43,7 +43,14 @@ Before deploy
 Please see details in mac or linux folder desc.
 <br>
 
-
+## jenkins build support 
+<br>
+1. installed jenkins on vm
+<br>
+2. installed ansible on vm
+<br>
+3. config jenkins as jenkinsfile, then build 
+<br>
 
 
 
