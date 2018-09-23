@@ -8,8 +8,13 @@ Similar with mac_ncv, but different in
 <br>
 3) since v1.2 use consul-template, nomad use host network model stick to docker container
 <br>
-4) query value by conslu key, get vault value from its token value.
+4) query value by consul key, get vault value from its token value.
 
-
+## use terraform to deploy to local VM
+1. installed binary version of terraform
+<br>
+2. run tf_start_all.sh
+will start nomad consul agent and run terraform init/apply
+it will insert consul key/value via tf file
 
 
