@@ -11,10 +11,13 @@ Similar with mac_ncv, but different in
 4) query value by consul key, get vault value from its token value.
 
 ## use terraform to deploy to local VM
+<br>
 1. installed binary version of terraform
 <br>
 2. run tf_start_all.sh
-will start nomad consul agent and run terraform init/apply
-it will insert consul key/value via tf file
-
+<br>
+**will start nomad consul agent and run terraform init/apply**
+<br>
+**it will insert consul key/value via tf file**
+<br>
 
