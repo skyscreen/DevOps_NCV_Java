@@ -16,8 +16,8 @@ Similar with mac_ncv, but different in
 <br>
 2. run tf_start_all.sh
 <br>
-**will start nomad consul agent and run terraform init/apply**
+<b>will start nomad consul agent and run terraform init/apply</b>
 <br>
-**it will insert consul key/value via tf file**
+<b>it will insert consul key/value via tf file</b>
 <br>
 
