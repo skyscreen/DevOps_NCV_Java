@@ -53,6 +53,7 @@ Please see details in mac or linux folder desc.
 <br>
 
 ## vagrant deploy support for project development
+<br>
 1. install vagrant
 <br>
 2. output box from virtualbox e.g. vagrant package --base f3974b9e-eeb4-47aa-9455-8858c1150412 --output ubuntu18.box
