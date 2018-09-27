@@ -52,6 +52,15 @@ Please see details in mac or linux folder desc.
 3. config jenkins as jenkinsfile, then build 
 <br>
 
+## vagrant deploy support for project development
+1. install vagrant
+<br>
+2. output box from virtualbox e.g. vagrant package --base f3974b9e-eeb4-47aa-9455-8858c1150412 --output ubuntu18.box
+<br>
+3.vagrant box add
+<br>
+4. vagrant init, vagrant up, vagrant halt, vagrant reload, vagrant provision ....
+<br>
 
 
 
