@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision "shell", inline: <<-SCRIPT
 	echo "Vagrant Box provisioned"
-	echo "Please sart MiniWeb to start nomad & docker"
+	echo "Please start MiniWeb to start nomad & docker"
 	echo "Access by http://localhost:8080"
   SCRIPT
 end
