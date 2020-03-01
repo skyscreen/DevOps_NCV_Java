@@ -1,5 +1,6 @@
 
 
+
 # Deploy java project docker on nomad consul vault on standalone on Linux VM and Mac 
 
 
